@@ -9,7 +9,7 @@ load_dotenv()
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix="!", intents=intents, guilds=[1072128338614833212])
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Подключение к серверу Minecraft
 MC_SERVER = JavaServer.lookup(f"{os.getenv('MC_SERVER_ADDRESS')}:{os.getenv('MC_SERVER_PORT', 25935)}")
